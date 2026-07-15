@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music & Videos | Sydney Small Live</title>
+<meta name="description" content="Watch live performance clips, listen to audio samples, and stream Sydney Small's music from her late-night sets across New York City.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-bg: #14100F;
+  --color-surface: #241B18;
+  --color-ink: #F3E9DD;
+
+  --color-brand-50: #FCF7EA;
+  --color-brand-100: #F7ECD0;
+  --color-brand-200: #EFDBA5;
+  --color-brand-300: #E4C87A;
+  --color-brand-400: #D8B55F;
+  --color-brand-500: #C9A24B;
+  --color-brand-600: #B08A3E;
+  --color-brand-700: #8F6F32;
+  --color-brand-800: #6E5527;
+  --color-brand-900: #4D3B1C;
+
+  --color-accent-50: #FBEAEC;
+  --color-accent-100: #F5CDD2;
+  --color-accent-200: #E9A0AA;
+  --color-accent-300: #DC737F;
+  --color-accent-400: #C94757;
+  --color-accent-500: #8C1D2B;
+  --color-accent-600: #791924;
+  --color-accent-700: #63151D;
+  --color-accent-800: #4C1016;
+  --color-accent-900: #350B0F;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Josefin Sans", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md bg-brand-500 text-bg font-body font-medium tracking-widest uppercase text-sm hover:bg-brand-600 transition-colors;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md border border-brand-500 text-brand-500 font-body font-medium tracking-widest uppercase text-sm hover:bg-brand-500 hover:text-bg transition-colors;
+  }
+  .card {
+    @apply bg-surface rounded-lg p-6 shadow-lg shadow-black/40 border border-brand-900/30;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-bg text-ink border-b border-brand-900/40">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center sm:justify-between gap-4 px-6 py-5">
+    <a href="/" class="font-display text-2xl sm:text-3xl tracking-wide text-brand-500">
+      Sydney Small <span class="italic text-accent-500">Live</span>
+    </a>
+    <nav class="font-body">
+      <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm uppercase tracking-widest">
+        <li><a href="/" class="hover:text-brand-500 transition-colors">Home</a></li>
+        <li><a href="/about" class="hover:text-brand-500 transition-colors">About</a></li>
+        <li><a href="/music" class="hover:text-brand-500 transition-colors">Music & Videos</a></li>
+        <li><a href="/shows" class="hover:text-brand-500 transition-colors">Upcoming Shows</a></li>
+        <li><a href="/booking" class="hover:text-brand-500 transition-colors">Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hero -->
+<section class="relative bg-bg text-ink overflow-hidden" data-block="hero">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--color-accent-900)_0%,_transparent_60%)] opacity-60"></div>
+  <div class="relative max-w-6xl mx-auto px-6 py-20 sm:py-28">
+    <p class="font-body uppercase tracking-[0.3em] text-xs sm:text-sm text-brand-500 mb-4">Sound & Vision</p>
+    <h1 class="font-display text-4xl sm:text-6xl leading-tight max-w-2xl">
+      Music &amp; <span class="italic text-accent-500">Videos</span>
+    </h1>
+    <p class="mt-6 font-body text-ink/80 max-w-xl text-base sm:text-lg">
+      A taste of the room — smoky live footage, session recordings, and the full catalog waiting for you on your favorite streaming platform.
+    </p>
+  </div>
+</section>
+<!-- /block:hero -->
+<!-- block:videos -->
+<section class="bg-surface text-ink" data-block="videos">
+  <div class="max-w-6xl mx-auto px-6 py-16 sm:py-24">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-10">
+      <h2 class="font-display text-3xl sm:text-4xl text-brand-500">Live Performance Clips</h2>
+      <p class="font-body text-sm text-ink/60 max-w-sm">Filmed at intimate rooms across the city — the low light, the upright bass, the whole late-night feeling.</p>
+    </div>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="card p-0 overflow-hidden md:col-span-2">
+        <div class="aspect-video bg-black">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Sydney Small — Live at The Django"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl text-ink">Live at The Django</h3>
+          <p class="font-body text-sm text-ink/60 mt-1">Full set, West Village — velvet curtains and a very patient piano.</p>
+        </div>
+      </div>
+      <div class="grid gap-8">
+        <div class="card p-0 overflow-hidden">
+          <div class="aspect-video bg-black">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Sydney Small — Smoke &amp; Standards"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-4">
+            <h3 class="font-display text-lg text-ink">Smoke &amp; Standards</h3>
+            <p class="font-body text-xs text-ink/60 mt-1">Acoustic session, midtown rooftop.</p>
+          </div>
+        </div>
+        <div class="card p-0 overflow-hidden">
+          <div class="aspect-video bg-black">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Sydney Small — After Hours"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-4">
+            <h3 class="font-display text-lg text-ink">After Hours</h3>
+            <p class="font-body text-xs text-ink/60 mt-1">Late set, Lower East Side supper club.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:videos -->
+<!-- block:audio -->
+<section class="bg-bg text-ink" data-block="audio">
+  <div class="max-w-6xl mx-auto px-6 py-16 sm:py-24">
+    <h2 class="font-display text-3xl sm:text-4xl text-brand-500 mb-2">Audio Samples</h2>
+    <p class="font-body text-ink/70 max-w-xl mb-10">A few studio and live recordings to give you the sound before the show — headphones recommended, low light optional.</p>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="card">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-display text-xl text-ink">Midnight in Chelsea</h3>
+          <span class="font-body text-xs uppercase tracking-widest text-brand-500">Original</span>
+        </div>
+        <audio controls class="w-full" preload="none">
+          <source src="/audio/midnight-in-chelsea.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="card">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-display text-xl text-ink">Autumn in New York</h3>
+          <span class="font-body text-xs uppercase tracking-widest text-brand-500">Standard</span>
+        </div>
+        <audio controls class="w-full" preload="none">
+          <source src="/audio/autumn-in-new-york.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="card">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-display text-xl text-ink">Velvet &amp; Vine</h3>
+          <span class="font-body text-xs uppercase tracking-widest text-brand-500">Original</span>
+        </div>
+        <audio controls class="w-full" preload="none">
+          <source src="/audio/velvet-and-vine.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="card">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-display text-xl text-ink">Bird on 7th Ave</h3>
+          <span class="font-body text-xs uppercase tracking-widest text-brand-500">Live</span>
+        </div>
+        <audio controls class="w-full" preload="none">
+          <source src="/audio/bird-on-7th-ave.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:audio -->
+<!-- block:streaming -->
+<section class="bg-surface text-ink" data-block="streaming">
+  <div class="max-w-6xl mx-auto px-6 py-16 sm:py-24">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div>
+        <h2 class="font-display text-3xl sm:text-4xl text-brand-500">Stream the Full Catalog</h2>
+        <p class="font-body text-ink/70 mt-2 max-w-lg">Everything you've heard here, and more, is out now wherever you listen.</p>
+      </div>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <a href="https://open.spotify.com" target="_blank" rel="noopener" class="card flex flex-col items-center text-center gap-3 hover:border-brand-500 transition-colors">
+        <span class="font-display text-2xl text-brand-500">Spotify</span>
+        <span class="font-body text-xs uppercase tracking-widest text-ink/60">Listen Now</span>
+      </a>
+      <a href="https://music.apple.com" target="_blank" rel="noopener" class="card flex flex-col items-center text-center gap-3 hover:border-brand-500 transition-colors">
+        <span class="font-display text-2xl text-brand-500">Apple Music</span>
+        <span class="font-body text-xs uppercase tracking-widest text-ink/60">Listen Now</span>
+      </a>
+      <a href="https://youtube.com" target="_blank" rel="noopener" class="card flex flex-col items-center text-center gap-3 hover:border-brand-500 transition-colors">
+        <span class="font-display text-2xl text-brand-500">YouTube</span>
+        <span class="font-body text-xs uppercase tracking-widest text-ink/60">Watch Now</span>
+      </a>
+      <a href="https://soundcloud.com" target="_blank" rel="noopener" class="card flex flex-col items-center text-center gap-3 hover:border-brand-500 transition-colors">
+        <span class="font-display text-2xl text-brand-500">SoundCloud</span>
+        <span class="font-body text-xs uppercase tracking-widest text-ink/60">Listen Now</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /block:streaming -->
+<!-- block:cta -->
+<section class="bg-bg text-ink" data-block="cta">
+  <div class="max-w-6xl mx-auto px-6 py-16 sm:py-20">
+    <div class="rounded-lg border border-accent-500/40 bg-gradient-to-r from-accent-900/50 to-transparent px-8 py-12 sm:px-14 sm:py-16 flex flex-col sm:flex-row items-center justify-between gap-8">
+      <div>
+        <h2 class="font-display text-3xl sm:text-4xl">Like what you hear?</h2>
+        <p class="font-body text-ink/70 mt-2 max-w-md">Book Sydney for your next event, venue night, or private affair — full band or solo, always in the pocket.</p>
+      </div>
+      <a href="/booking" class="btn whitespace-nowrap">Book a Show</a>
+    </div>
+  </div>
+</section>
+<!-- /block:cta -->
+<!-- block:footer -->
+<footer class="bg-surface text-ink border-t border-brand-900/40">
+  <div class="max-w-6xl mx-auto px-6 py-10 grid gap-10 sm:grid-cols-3">
+    <div>
+      <p class="font-display text-2xl text-brand-500">
+        Sydney Small <span class="italic text-accent-500">Live</span>
+      </p>
+      <p class="mt-3 font-body text-sm text-ink/70 max-w-xs">
+        Sultry vocals and late-night sets, live across New York City's most storied rooms.
+      </p>
+    </div>
+    <div class="font-body text-sm space-y-1">
+      <p class="text-brand-500 uppercase tracking-widest text-xs mb-2">Contact</p>
+      <p><a href="mailto:booking@sydneysmalllive.com" class="hover:text-brand-500 transition-colors">booking@sydneysmalllive.com</a></p>
+      <p><a href="tel:+12125550143" class="hover:text-brand-500 transition-colors">(212) 555-0143</a></p>
+      <p class="text-ink/70">New York, NY</p>
+    </div>
+    <nav class="font-body text-sm">
+      <p class="text-brand-500 uppercase tracking-widest text-xs mb-2">Navigate</p>
+      <ul class="space-y-1">
+        <li><a href="/" class="hover:text-brand-500 transition-colors">Home</a></li>
+        <li><a href="/about" class="hover:text-brand-500 transition-colors">About</a></li>
+        <li><a href="/music" class="hover:text-brand-500 transition-colors">Music & Videos</a></li>
+        <li><a href="/shows" class="hover:text-brand-500 transition-colors">Upcoming Shows</a></li>
+        <li><a href="/booking" class="hover:text-brand-500 transition-colors">Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-brand-900/40 py-4 text-center text-xs font-body text-ink/50">
+    &copy; 2024 Sydney Small Live. All rights reserved.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
