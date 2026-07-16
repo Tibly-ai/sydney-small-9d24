@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account — Sydney Small Live</title>
+<meta name="description" content="Visitor sign-in and sign-up page using passwordless email authentication. After signing in, visitors can manage their profile and access their booking hist">
+<link rel="canonical" href="https://sydney-small-9d24.sites.tibly.ai/account">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sydney-small-9d24.sites.tibly.ai/account">
+<meta property="og:site_name" content="Sydney Small Live">
+<meta property="og:title" content="Account — Sydney Small Live">
+<meta property="og:description" content="Visitor sign-in and sign-up page using passwordless email authentication. After signing in, visitors can manage their profile and access their booking hist">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-bg: #14100F;
+  --color-surface: #241B18;
+  --color-ink: #F3E9DD;
+
+  --color-brand-50: #FCF7EA;
+  --color-brand-100: #F7ECD0;
+  --color-brand-200: #EFDBA5;
+  --color-brand-300: #E4C87A;
+  --color-brand-400: #D8B55F;
+  --color-brand-500: #C9A24B;
+  --color-brand-600: #B08A3E;
+  --color-brand-700: #8F6F32;
+  --color-brand-800: #6E5527;
+  --color-brand-900: #4D3B1C;
+
+  --color-accent-50: #FBEAEC;
+  --color-accent-100: #F5CDD2;
+  --color-accent-200: #E9A0AA;
+  --color-accent-300: #DC737F;
+  --color-accent-400: #C94757;
+  --color-accent-500: #8C1D2B;
+  --color-accent-600: #791924;
+  --color-accent-700: #63151D;
+  --color-accent-800: #4C1016;
+  --color-accent-900: #350B0F;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Josefin Sans", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md bg-brand-500 text-bg font-body font-medium tracking-widest uppercase text-sm hover:bg-brand-600 transition-colors;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md border border-brand-500 text-brand-500 font-body font-medium tracking-widest uppercase text-sm hover:bg-brand-500 hover:text-bg transition-colors;
+  }
+  .card {
+    @apply bg-surface rounded-lg p-6 shadow-lg shadow-black/40 border border-brand-900/30;
+  }
+}
+</style>
+<script>window.TIBLY_SUPABASE={url:"https://tjmxolhupchwcdssxzmi.supabase.co",anonKey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqbXhvbGh1cGNod2Nkc3N4em1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxNzQ1MTAsImV4cCI6MjA5OTc1MDUxMH0.3TIxftzaWVrvzMDQJoqM7W7sA6h9WyEv2D3dhFdWVTE"};</script>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-bg text-ink border-b border-brand-900/40">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center sm:justify-between gap-4 px-6 py-5">
+    <a href="/" class="font-display text-2xl sm:text-3xl tracking-wide text-brand-500">
+      Sydney Small <span class="italic text-accent-500">Live</span>
+    </a>
+    <nav class="font-body">
+      <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm uppercase tracking-widest">
+        <li><a href="/" class="hover:text-brand-500 transition-colors">Home</a></li>
+        <li><a href="/about" class="hover:text-brand-500 transition-colors">About</a></li>
+        <li><a href="/music" class="hover:text-brand-500 transition-colors">Music & Videos</a></li>
+        <li><a href="/shows" class="hover:text-brand-500 transition-colors">Upcoming Shows</a></li>
+        <li><a href="/booking" class="hover:text-brand-500 transition-colors">Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:app -->
+<script type="importmap">
+{"imports":{
+"react":"https://esm.sh/react@18.3.1",
+"react/jsx-runtime":"https://esm.sh/react@18.3.1/jsx-runtime",
+"react-dom/client":"https://esm.sh/react-dom@18.3.1/client",
+"@supabase/supabase-js":"https://esm.sh/@supabase/supabase-js@2"
+}}
+</script>
+<section class="section app-section" data-block="app">
+  <div id="tibly-app-root"></div>
+</section>
+<script type="module" src="/assets/account.js"></script>
+<!-- /block:app -->
+<!-- block:footer -->
+<footer class="bg-surface text-ink border-t border-brand-900/40">
+  <div class="max-w-6xl mx-auto px-6 py-10 grid gap-10 sm:grid-cols-3">
+    <div>
+      <p class="font-display text-2xl text-brand-500">
+        Sydney Small <span class="italic text-accent-500">Live</span>
+      </p>
+      <p class="mt-3 font-body text-sm text-ink/70 max-w-xs">
+        Sultry vocals and late-night sets, live across New York City's most storied rooms.
+      </p>
+    </div>
+    <div class="font-body text-sm space-y-1">
+      <p class="text-brand-500 uppercase tracking-widest text-xs mb-2">Contact</p>
+      <p><a href="mailto:booking@sydneysmalllive.com" class="hover:text-brand-500 transition-colors">booking@sydneysmalllive.com</a></p>
+      <p><a href="tel:+12125550143" class="hover:text-brand-500 transition-colors">(212) 555-0143</a></p>
+      <p class="text-ink/70">New York, NY</p>
+    </div>
+    <nav class="font-body text-sm">
+      <p class="text-brand-500 uppercase tracking-widest text-xs mb-2">Navigate</p>
+      <ul class="space-y-1">
+        <li><a href="/" class="hover:text-brand-500 transition-colors">Home</a></li>
+        <li><a href="/about" class="hover:text-brand-500 transition-colors">About</a></li>
+        <li><a href="/music" class="hover:text-brand-500 transition-colors">Music & Videos</a></li>
+        <li><a href="/shows" class="hover:text-brand-500 transition-colors">Upcoming Shows</a></li>
+        <li><a href="/booking" class="hover:text-brand-500 transition-colors">Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-brand-900/40 py-4 text-center text-xs font-body text-ink/50">
+    &copy; 2024 Sydney Small Live. All rights reserved.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
